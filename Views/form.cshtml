@@ -2,34 +2,34 @@
 <html>
     <head>
         <meta charset="utf-8">
-        <title>Mad Libs</title>
+        <title>Parcel Shipping</title>
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     </head>
     <body>
         <div class="container">
-            <h1>Fill in the blanks to write your story!</h1>
+            <h1>Ship a parcel!</h1>
             <form action="/parcelDisplay">
                 <div class="form-group">
                     <label for="parcel-name">Give your parcel a name to keep track of it</label>
-                    <input id="parcel-name" name="parcel-name" class="form-control" type="text">
+                    <input id="parcel-name" name="parcel-name" class="form-control" type="text" placeholder="Parcel Name">
                 </div>
                 <div class="form-group">
                     <label for="parcel-height">Enter your parcel's height</label>
-                    <input id="parcel-height" name="parcel-height" class="form-control" type="text">
+                    <input id="parcel-height" name="parcel-height" class="form-control" type="number" min="0" placeholder="0">
                 </div>
                 <div class="form-group">
                     <label for="parcel-width">Enter your parcel's width</label>
-                    <input id="parcel-width" name="parcel-width" class="form-control" type="text">
+                    <input id="parcel-width" name="parcel-width" class="form-control" type="number" min="0" placeholder="0">
                 </div>
                 <div class="form-group">
                     <label for="parcel-length">Enter your parcel's length</label>
-                    <input id="parcel-length" name="parcel-length" class="form-control" type="text">
+                    <input id="parcel-length" name="parcel-length" class="form-control" type="number" min="0" placeholder="0">
                 </div>
                 <div class="form-group">
                     <label for="parcel-weight">Enter your parcel's weight</label>
-                    <input id="parcel-weight" name="parcel-weight" class="form-control" type="text">
+                    <input id="parcel-weight" name="parcel-weight" class="form-control" type="number" min="0" placeholder="0">
                 </div>
-                <button type="submit" class="btn">Show me the story!</button>
+                <button type="submit" class="btn">Ship it!</button>
             </form>
         </div>
     </body>

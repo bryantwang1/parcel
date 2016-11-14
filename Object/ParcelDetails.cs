@@ -1,12 +1,23 @@
 namespace Parcel.Objects
 {
-    public class Parcel
+    public class ParcelObject
     {
         private string _name;
         private int _weight;
         private int _height;
         private int _width;
         private int _length;
+        private int _volume;
+
+        public ParcelObject(string parcelName, int parcelWeight, int parcelHeight, int parcelWidth, int parcelLength)
+        {
+            _name = parcelName;
+            _weight = parcelWeight;
+            _height = parcelHeight;
+            _width = parcelWidth;
+            _length = parcelLength;
+            _volume = _height * _width * _length;
+        }
 
         public string GetName() {
             return _name;
@@ -49,7 +60,11 @@ namespace Parcel.Objects
         }
 
         public int GetVolume() {
-            return _height * _width * _depth;
+            return _volume;
+        }
+
+        public double GetCostToShip() {
+            return _volume * _weight * .4;
         }
     }
 }

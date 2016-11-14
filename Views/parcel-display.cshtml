@@ -6,8 +6,10 @@
     </head>
     <body>
         <div class="container">
-            <h1>Your parcel</h1>
-            <p>Stuff</p>
+            <h1>Your parcel (@Model.GetName()):</h1>
+            <p>Your parcel's volume is: @Model.GetVolume()</p>
+            <p>Your cost to ship is: $@Model.GetCostToShip()</p>
+
         </div>
     </body>
 </html>
